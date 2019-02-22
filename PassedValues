@@ -1,13 +1,4 @@
 #!/bin/bash
 
-val="[\n"
-val=$val"	\tname: '$1',\n"
-val=$val"	\trootprojectname: '$2',\n"
-val=$val"       \tgiturl: '$3',\n"
-val=$val"       \tdashboard: $4,\n"
-val=$val"       \tendpoint: '$5',\n"
-val=$val"       \tdefault_branch: '$6',\n"
-val=$val"       \twebhook_token: '$7',\n"
-val=$val"       \tstageTemplates: '$8'\n"
-val=$val"]"
+val="[\n\tname: '$1',\n\trootprojectname: '$2',\n\tgiturl: '$3',\n\tdashboard: $4,\n\tendpoint: '$5',\n\tdefault_branch: '$6',\n\twebhook_token: '$7',\n\tstageTemplates: '$8'\n]"
 echo -e $val  > temp
