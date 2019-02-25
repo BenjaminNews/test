@@ -1,4 +1,12 @@
 #!/bin/bash
 
-val="[\n\tname: '$1',\n\trootprojectname: '$2',\n\tgiturl: '$3',\n\tdashboard: $4,\n\tendpoint: '$5',\n\tdefault_branch: '$6',\n\twebhook_token: '$7',\n\tstageTemplates: '$8'\n]"
-echo -e $val  > temp
+echo -e "[
+	name: '$1',
+	rootprojectname: '$2',
+	giturl: '$3',
+	dashboard: $4,
+	endpoint: '$5',
+	default_branch: '$6',
+	webhook_token: '$7',
+	stageTemplates: '$8'
+]" > temp
